@@ -53,8 +53,8 @@
       map.addControl(new LogoControl());
 
       const ctrl = new IsochroneControl({
-        apiKey: "YOUR_API_KEY",
-        routingProfile: "test",
+        apiKey: import.meta.env.VITE_MAPTOOLKIT_API_KEY,
+        routingProfile: "foot",
       });
 
       map.addControl(ctrl);
