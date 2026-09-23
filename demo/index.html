@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>maplibre-isochrone-control demo</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* #map.maplibregl-map {
+        --isochrone-control-color-bg: #e2fdeb;
+        --isochrone-control-color-marker-border: #fff;
+        --isochrone-control-color-accent: #9de7a3;
+        --isochrone-control-tooltip-bg: #baf7c8;
+        --isochrone-control-tooltip-color: #2a612f;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="module">
+      import { Map, config } from "maplibre-gl";
+      import "maplibre-gl/dist/maplibre-gl.css";
+
+      import "../src/style.css";
+      import { IsochroneControl } from "../src/index.ts";
+
+      import { LogoControl } from "@maptoolkit/maplibre-logo-control";
+      import "@maptoolkit/maplibre-logo-control/style.css";
+
+      if (import.meta.env.PROD) {
+        config.WORKER_URL = new URL("./maplibre-gl-worker.mjs", import.meta.url).href;
+      }
+
+      const map = new Map({
+        container: "map",
+        style: "https://styles.maptoolkit.org/summer.json",
+        center: { lng: 11.40037, lat: 47.26816 },
+        zoom: 12,
+        attributionControl: { customAttribution: "", compact: false },
+      });
+
+      map.addControl(new LogoControl());
+
+      const ctrl = new IsochroneControl({
+        apiKey: "YOUR_API_KEY",
+        routingProfile: "test",
+      });
+
+      map.addControl(ctrl);
+    </script>
+  </body>
+</html>
