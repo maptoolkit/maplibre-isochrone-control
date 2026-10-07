@@ -1,6 +1,6 @@
 {
   "name": "@maptoolkit/maplibre-isochrone-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A MapLibre GL JS control plugin that lets users drag an isochrone marker onto the map to show a travel-time area.",
   "repository": {
     "type": "git",
