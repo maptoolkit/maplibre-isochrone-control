@@ -23,6 +23,8 @@ jobs:
       id-token: write
       pages: write
       contents: read
+    secrets:
+      PAGES_MAPTOOLKIT_API_KEY: ${{ secrets.PAGES_MAPTOOLKIT_API_KEY }}
 
   publish-docs:
     needs: release
