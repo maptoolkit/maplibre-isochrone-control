@@ -16,6 +16,7 @@ jobs:
         title: "Show Travel-Time Areas in MapLibre GL JS"
         linkTitle: "Isochrone Control"
         description: "Let users drag a marker onto a MapLibre GL JS map to show the area reachable within a travel time, with the Maptoolkit Isochrone Control plugin: install, options, custom providers and routing profiles, methods, and styling."
+        aliases: [/third-party-libraries/maplibre/maplibre-isochrone-control/]
         weight: 50
         libraries: [maplibre]
         tags: [maplibre, controls, isochrone, routing]
