@@ -1,8 +1,8 @@
 # maplibre-isochrone-control
 
-[![License](https://img.shields.io/npm/l/@maptoolkit/maplibre-isochrone-control?style=plastic)](LICENSE)
-[![Version](https://img.shields.io/npm/v/@maptoolkit/maplibre-isochrone-control?style=plastic)](https://www.npmjs.com/package/@maptoolkit/maplibre-isochrone-control)
-[![Downloads](https://img.shields.io/npm/dm/@maptoolkit/maplibre-isochrone-control?style=plastic)](https://www.npmjs.com/package/@maptoolkit/maplibre-isochrone-control)
+[![NPM](https://img.shields.io/npm/v/@maptoolkit/maplibre-isochrone-control?style=for-the-badge&logo=npm&logoColor=white&labelColor=CB3837&color=555)](https://www.npmjs.com/package/@maptoolkit/maplibre-isochrone-control)
+[![License](https://img.shields.io/npm/l/@maptoolkit/maplibre-isochrone-control?style=for-the-badge)](https://github.com/maptoolkit/maplibre-isochrone-control/blob/HEAD/LICENSE)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maptoolkit/maplibre-isochrone-control)
 
 A [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/) control plugin that lets users drag an isochrone marker onto the map to show a travel-time area.
 
@@ -142,4 +142,4 @@ See `src/style.css` for the full list of `--isochrone-control-*` variables.
 
 ## License
 
-**maplibre-isochrone-control** is open-source under the [BSD 3-Clause License](LICENSE).
+**maplibre-isochrone-control** is open-source under the [BSD 3-Clause License](https://github.com/maptoolkit/maplibre-isochrone-control/blob/HEAD/LICENSE).
