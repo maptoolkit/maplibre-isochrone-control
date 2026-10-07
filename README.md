@@ -14,6 +14,8 @@ A [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/) control plugin tha
 npm install @maptoolkit/maplibre-isochrone-control maplibre-gl
 ```
 
+Built and tested against `maplibre-gl` v6.
+
 ## Usage
 
 ```js
